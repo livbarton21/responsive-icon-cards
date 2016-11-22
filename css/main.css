@@ -32,6 +32,7 @@ img {
 
 .card-body h2 {
   font-weight: normal;
+  margin: .5rem;
 }
 
 li {
@@ -39,7 +40,12 @@ li {
 }
 
 .card-body {
-  text-align: left;  
+  text-align: left;
+}
+
+.card {
+  margin: 0;
+  padding: 0;
 }
 
 @media only screen and (min-width: 25em) {
@@ -47,6 +53,15 @@ li {
   html {
     font-size: 100%;
     line-height: 1.3;
+  }
+
+  .card-img img {
+    display: inline-block;
+  }
+
+  .card-body {
+    display: inline-block;
+    width: calc(100% - 64px - .8em);
   }
 
   h1,
@@ -80,6 +95,14 @@ li {
   h1,
   p {
     margin: 0 0 1.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
   }
 
 }
